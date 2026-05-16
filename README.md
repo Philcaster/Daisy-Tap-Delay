@@ -20,20 +20,20 @@ I'm new to Daisy after years working on FV-1 code.  GuitarML projects and code w
 
 
 ## Layout
-Knob1 = Time
-Knob2 = Feedback
-Knob3 = Mix (Delay Level)
-Knob4 = Tone (LPF cutoff frequency)
-Knob5 = Modulation Depth
+Knob1 = Time<br>
+Knob2 = Feedback<br>
+Knob3 = Mix (Delay Level)<br>
+Knob4 = Tone (LPF cutoff frequency)<br>
+Knob5 = Modulation Depth<br>
 Knob6 = Reverb (Decay time and Reverb Level both controlled by this knob)
 
-SW1 = Subdiv (down=1/4, up=dotted 1/8)
-SW2 = HPF (down=off, up=on).  The HPF makes the repeats fade away in the distance.
-SW3 = Modulation (down=off, up=on)
+SW1 = Subdiv (down=1/4, up=dotted 1/8)<br>
+SW2 = HPF (down=off, up=on).  The HPF makes the repeats fade away in the distance.<br>
+SW3 = Modulation (down=off, up=on)<br>
 SW4 = Reverb (down=off, up=on)
 
-FTSW 1 (left) = Bypass/On
+FTSW 1 (left) = Bypass/On<br>
 FTSW 2 (right) = Tap Tempo
 
-LED1 = Effect On indicator
+LED1 = Effect On indicator<br>
 LED2 = Delay rate blinking.  Below 200ms, it stays solid.
