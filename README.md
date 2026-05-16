@@ -12,8 +12,28 @@ I worked out a couple of details which I think make the tap tempo operate more s
 -The feedback is temporarily zeroed.<br>
 These processes help avoid annoying time change sounds repeating when you use tap to change the delay time.
 
-I used the terrarium.h class, which after some puzzling I realized is just a modifier for re-mapping pins of the daisy_petal.h class from libDaisy.
+I used the terrarium.h class, which after some puzzling I realized is just a modifier for re-mapping pins of the daisy_petal.h class from libDaisy.  If you are compiling this, make sure the DaisySP and libDaisy folder paths are setup correctly in your MakeFile.  (In my folder structure, they are 2 folders back).  The MakeFile needs to have the USE_DAISYSP_LGPL = 1 command in order to use the ReverbSc class.
 
-If you are compiling this, make sure the DaisySP and libDaisy folder paths are setup correctly in your MakeFile.  (In my folder structure, they are 2 folders back).  The MakeFile needs to have the USE_DAISYSP_LGPL = 1 command in order to use the ReverbSc class.
+I have also posted the .bin which you can directly flash via the Electrosmith-Web-Programmer online tool.
 
 I'm new to Daisy after years working on FV-1 code.  GuitarML projects and code were a huge resource for getting up to speed on the Daisy.
+
+
+## Layout
+Knob1 = Time
+Knob2 = Feedback
+Knob3 = Mix (Delay Level)
+Knob4 = Tone (LPF cutoff frequency)
+Knob5 = Modulation Depth
+Knob6 = Reverb (Decay time and Reverb Level both controlled by this knob)
+
+SW1 = Subdiv (down=1/4, up=dotted 1/8)
+SW2 = HPF (down=off, up=on).  The HPF makes the repeats fade away in the distance.
+SW3 = Modulation (down=off, up=on)
+SW4 = Reverb (down=off, up=on)
+
+FTSW 1 (left) = Bypass/On
+FTSW 2 (right) = Tap Tempo
+
+LED1 = Effect On indicator
+LED2 = Delay rate blinking.  Below 200ms, it stays solid.
