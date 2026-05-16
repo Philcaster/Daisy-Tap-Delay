@@ -12,7 +12,7 @@ I worked out a couple of details which I think make the tap tempo operate more s
 -The feedback is temporarily zeroed.<br>
 These processes help avoid annoying time change sounds repeating when you use tap to change the delay time.
 
-I used the terrarium.h class, which after some puzzling I realized is a modifier for re-mapping pins of the daisy_petal.h class from libDaisy.
+I used the terrarium.h class, which after some puzzling I realized is just a modifier for re-mapping pins of the daisy_petal.h class from libDaisy.
 
 If you are compiling this, make sure the DaisySP and libDaisy folder paths are setup correctly in your MakeFile.  (In my folder structure, they are 2 folders back).  The MakeFile needs to have the USE_DAISYSP_LGPL = 1 command in order to use the ReverbSc class.
 
