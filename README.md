@@ -6,10 +6,10 @@ This is a tap tempo effect for the pedalpcb Terrarium.  It includes 1/4 - dotted
 
 The Tap Tempo is quite simple, and it just recognizes the last 2 clicks (within 1 second).  For the blinking LED and Tap Tempo, I use a counter that runs each audio-callback loop, so in my case it's 0.001.  If you change the block size, be sure to update this "increment" variable.
 
-I worked out a couple of details which I think make the tap tempo operate more smoothly.<br>
--The Time knob has a smoothing filter so it doesn't sound glitchy when you change the time (this is standard on most DSP delay code)
--The smoothing is bypassed when a tap change is detected (the official delay time automatically "catches up" with the target time)
--The feedback is temporarily zeroed
+I worked out a couple of details which I think make the tap tempo operate more smoothly:<br>
+-The Time knob has a smoothing filter so it doesn't sound glitchy when you change the time (this is standard on most DSP delay code).<br>
+-The smoothing is bypassed when a tap change is detected (the official delay time automatically "catches up" with the target time).<br>
+-The feedback is temporarily zeroed.<br>
 These processes help avoid annoying time change sounds repeating when you use tap to change the delay time.
 
 I used the terrarium.h class, which after some puzzling I realized is a modifier for re-mapping pins of the daisy_petal.h class from libDaisy.
