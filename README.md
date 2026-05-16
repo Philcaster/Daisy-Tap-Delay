@@ -6,4 +6,4 @@
 
 ## Description
 
-<!-- Describe your example here -->
+<This is a tap tempo effect for the pedalpcb Terrarium.>
