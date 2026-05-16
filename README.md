@@ -2,7 +2,7 @@
 
 ## Author
 
-<Phil>
+Phil
 
 ## Description
 
