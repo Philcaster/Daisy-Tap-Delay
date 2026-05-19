@@ -1,10 +1,8 @@
 # TapDelayProject
 
-(Post in progress....)
+This is a tap tempo effect for the pedalpcb Terrarium which I wrote, with inspiration from other projects such as the GuitarML Seed.  It features 1/4 - dotted 1/8 modes, HP and LP filters, modulation, and reverb.
 
-This is a tap tempo effect for the pedalpcb Terrarium.  It includes 1/4 - dotted 1/8 modes, HP and LP filters, modulation, and reverb (using the ReverbSc class from DaisySP library).  
-
-The Tap Tempo is quite simple, and it just recognizes the last 2 clicks (within 1 second).  For the blinking LED and Tap Tempo, I use a counter that runs each audio-callback loop, so in my case it's 0.001.  If you change the block size, be sure to update this "increment" variable.
+The Tap Tempo is quite simple, and it just recognizes the last 2 clicks (within 1 second).  For the blinking LED and Tap Tempo, I use a counter that runs each audio-callback loop, so in my case it's 0.001 accurate.  If you change the block size, be sure to update this "increment" variable.
 
 I worked out a couple of details which I think make the tap tempo operate more smoothly:<br>
 -The Time knob has a smoothing filter so it doesn't sound glitchy when you change the time (this is standard on most DSP delay code).<br>
