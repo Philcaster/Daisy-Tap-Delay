@@ -98,7 +98,7 @@ void AudioCallback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, s
 	read_mod = knob_mod.Process();
     read_rvb = knob_rvb.Process();
 
-    fonepole(var_fdbk, read_fdbk_knob, .0002f); //smooth feedback if it's set to zero during time jump
+    fonepole(var_fdbk, read_fdbk_knob, .01f); //smooth feedback if it's set to zero during time jump
 
     if(hw.switches[Terrarium::FOOTSWITCH_1].RisingEdge())
     {
